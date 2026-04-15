@@ -124,6 +124,8 @@ form > legend {
   flex-basis: 34%;
   margin-bottom: 5px;
   background-color: white;
+  border-color: lightgray;
+  border-width: 1.5px;
 }
 
 form > div > legend{
@@ -137,12 +139,23 @@ label,input {
   flex-direction: column;
 }
 
+.inputs input:focus {
+  border-color: blue;
+  outline: none;
+}
+
+.inputs input:invalid {
+  border-color: red;
+  outline: none;
+}
+
 
 #submit-button {
   border-radius: 8px;
   background-color: darkolivegreen;
   padding: 8px;
   margin-left: 55px;
+  color:white;
 }
 
 .form {
