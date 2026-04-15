@@ -1,0 +1,163 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+@font-face{
+  font-family: "norse";
+  src: url(Norsebold.otf);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+*:not(dialog) {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+
+
+body {
+    background-color: #F5F5F5;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.image-container{
+  width:30%;
+  background-image: url(./image-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.card-body{
+  position: relative;
+  top: 40%;
+  color: white; 
+  font-family: "norse";
+  font-size: 66px;
+  word-wrap: break-word;
+  background-color: rgba(0,0,0,0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+h3{
+  padding-left: 20px;
+}
+
+#odin-project-logo{
+  height: 90px;
+}
+
+.main-form-container{
+  font-weight: 500;
+  width:70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+form > legend {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+
+}
+
+.inputs{
+ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+.inputs * {
+  flex-basis: 34%;
+  margin-bottom: 5px;
+  background-color: white;
+}
+
+form > div > legend{
+  padding-top: 20px;
+  padding-left: 10px;
+  font-size: larger;
+}
+
+label,input {
+  display: flex;
+  flex-direction: column;
+}
+
+
+#submit-button {
+  border-radius: 8px;
+  background-color: darkolivegreen;
+  padding: 8px;
+  margin-left: 55px;
+}
+
+.form {
+  background-color: white;
+  padding: 0px;
+  box-shadow: 0 0 5px  #ccc;
+  margin-bottom: 30px;
+}
+
+form > p {
+  margin-left: 20px;
+}
+
+p span {
+  color: darkolivegreen
+}
+
+
